@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reactive PNGs</title>
+    <link rel="stylesheet" href="Assets/style.css">
+
+</head>
+<body>
+<script type="text/javascript" src="Assets/microphoneLevel.js"></script>
+<div id="avatarBox">
+    <img id="sprite" src="spriteClosed.png" alt="Image not found." width="600" height="600">
+</div>
+
+<div id="controlPanel">
+    <div id="logo">
+        <img src="Assets/logo.png" alt="PNGTubie" width="200" height="70">
+    </div>
+    <h3>Control panel: </h3>
+    <div id="volume-visualizer"></div>
+    <div id="slidecontainer">
+        <p>Speaking cutoff threshold:</p>
+        <input type="range" min="1" max="100" value="45" class="slider" id="myRange">
+        <p id="sliderValue" style="display:inline">45</p>
+    </div>
+</div>
+</body>
+</html>
