@@ -2,7 +2,7 @@
     background-color: #00b140;
     width: 700px;
     height: 800px;
-    filter: brightness(90%);
+    filter: brightness(95%);
     float: left;
 }
 
@@ -17,18 +17,55 @@
 
 #controlPanel {
     width: 200px;
-    height: 260px;
+    height: 440px;
     float: left;
     padding: 5px 10px;
     margin: 0px 5px;
 }
 
-#slidecontainer {
+#slideContainer {
     width: 200px;
-    height: 100px;
+    height: 80px;
     position: relative;
     float: left;
     clear: both;
+}
+
+#brightnessSlide {
+    width: 200px;
+    height: 80px;
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+#frameSlideContainer {
+    width: 200px;
+    height: 80px;
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+    font-family: Calibri, serif;
+}
+
+#displayCheckbox {
+    width: 200px;
+    height: 70px;
+    position: relative;
+    float: left;
+}
+
+#backgroundCheckbox {
+    width: 200px;
+    height: 70px;
+    position: relative;
+    float: left;
 }
 
 .speaking {
@@ -57,6 +94,7 @@ div {
     width: 200px;
     height: 20px;
     background-color: #DDD;
+    font-family: Calibri, serif;
 }
 
 div::before {
