@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reactive PNGs</title>
+    <link rel="stylesheet" href="Assets/style.css">
+
+</head>
+<body>
+<script type="text/javascript" src="Assets/microphoneLevel.js"></script>
+<div id="avatarBox">
+    <img id="sprite" src="spriteClosed.png" alt="Image not found." width="600" height="600">
+</div>
+
+<div id="controlPanel">
+    <div id="logo">
+        <img src="Assets/logo.png" alt="PNGTubie" width="200" height="70">
+    </div>
+
+    <h3>Control panel: </h3>
+
+    <div id="volume-visualizer"></div>
+
+    <div id="displayCheckbox">
+        <table>
+            <thead></thead>
+            <tbody>
+            <tr>
+                <td>
+                    <input type="radio" id="normal" name="sprite" value="normal" checked>
+                    <label for="normal">Normal sprite</label> <br>
+                </td>
+            </tr>
+            <!--
+            <tr>
+                <td>
+                    <input type="radio" id="coffee" name="sprite" value="coffee">
+                    <label for="coffee">Other sprite</label>
+                </td>
+            </tr>
+            -->
+            <tr>
+                <td>
+                    <input type="radio" id="animated" name="sprite" value="animated">
+                    <label for="normal">Animated sprite</label>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="backgroundCheckbox">
+        <table>
+            <thead></thead>
+            <tbody>
+            <tr>
+                <td>
+                    <input type="radio" id="green" name="background" value="green" checked>
+                    <label for="green">Green screen</label> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="blue" name="background" value="blue">
+                    <label for="blue">Blue screen</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="magenta" name="background" value="magenta">
+                    <label for="magenta">Magenta screen</label>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+<!--    <div id="frameSlideContainer">-->
+<!--        <p>Animation frame count:</p>-->
+<!--        <input type="range" min="2" max="3" value="3" class="slider" id="framesRange">-->
+<!--        <p id="sliderValueFrames" style="display:inline">3</p>-->
+<!--    </div>-->
+
+    <div id="slideContainer">
+        <p>Speaking cutoff threshold:</p>
+        <input type="range" min="1" max="100" value="45" class="slider" id="myRange">
+        <p id="sliderValue" style="display:inline">45</p>
+    </div>
+
+    <div id="brightnessSlide">
+        <p>Closed PNG brightness: </p>
+        <input type="range" min="1" max="100" value="95" class="slider" id="pngBrightness">
+        <p id="brightnessDisplay" style="display:inline">95</p>
+    </div>
+
+</div>
+</body>
+</html>

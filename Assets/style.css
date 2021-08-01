@@ -1,0 +1,118 @@
+#avatarBox {
+    background-color: #00b140;
+    width: 700px;
+    height: 800px;
+    filter: brightness(95%);
+    float: left;
+}
+
+#logo {
+    width: 200px;
+    height: 70px;
+    float: left;
+    position: relative;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+#controlPanel {
+    width: 200px;
+    height: 440px;
+    float: left;
+    padding: 5px 10px;
+    margin: 0px 5px;
+}
+
+#slideContainer {
+    width: 200px;
+    height: 80px;
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+#brightnessSlide {
+    width: 200px;
+    height: 80px;
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+#frameSlideContainer {
+    width: 200px;
+    height: 80px;
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+    font-family: Calibri, serif;
+}
+
+#displayCheckbox {
+    width: 200px;
+    height: 70px;
+    position: relative;
+    float: left;
+}
+
+#backgroundCheckbox {
+    width: 200px;
+    height: 70px;
+    position: relative;
+    float: left;
+}
+
+.speaking {
+    border-color:rgba(0,0,0,0) !important;
+    position:relative;
+    animation-name: speak-now;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    filter: brightness(100%);
+    content:url(../spriteOpen.png);
+}
+
+p {
+    font-family: Calibri, serif;
+}
+
+@keyframes speak-now {
+    0% { bottom:0px; }
+    15% { bottom:10px; }
+    30% { bottom:0px; }
+}
+
+div {
+    --volume: 0%;
+    position: relative;
+    width: 200px;
+    height: 20px;
+    background-color: #DDD;
+    font-family: Calibri, serif;
+}
+
+div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--volume);
+    background-color: green;
+    transition: width 100ms linear;
+}
+
+button {
+    margin-left: 50px;
+}
+
+h3 {
+    margin: 20px;
+    font-family: sans-serif;
+}
